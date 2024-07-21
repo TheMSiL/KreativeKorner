@@ -1,0 +1,1205 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1220px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #efebe4;
+	padding-top: 16px;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+}
+
+.header__link {
+	transition: 0.05s;
+	cursor: pointer;
+}
+
+.header__link:hover {
+	border-bottom: 3px solid #f05624;
+}
+.header__link-two:hover {
+	border-bottom: 3px solid #f6b8d1;
+}
+.header__link-three:hover {
+	border-bottom: 3px solid #304875;
+}
+.header__link-four:hover {
+	border-bottom: 3px solid #53bfa9;
+}
+.header__link-five:hover {
+	border-bottom: 3px solid #fdbf4d;
+}
+
+.header__list {
+	display: flex;
+	gap: 41px;
+}
+
+.header__schedule-link {
+	display: flex;
+	gap: 10px;
+	padding: 12px 40px;
+	color: #fff;
+	background-color: #f05624;
+	align-items: center;
+	border-radius: 32px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	transition: 0.1s;
+}
+
+.header__schedule-link:hover {
+	background-color: #fdbf4d;
+}
+
+/* .menu__mobile,
+.menu-btn{
+    display: none;
+} */
+
+.hamburger-menu {
+	display: none;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+	opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+	display: flex; /* используем flex для центрирования содержимого */
+	align-items: center; /* центрируем содержимое кнопки */
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 11;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #f05624;
+}
+.menu__btn > span::before {
+	content: '';
+	top: -8px;
+}
+.menu__btn > span::after {
+	content: '';
+	top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+	display: block;
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: -100%;
+	width: 300px;
+	height: 100%;
+	margin: 0;
+	padding: 80px 0;
+	list-style: none;
+	text-align: center;
+	background-color: #efebe4;
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+	z-index: 3;
+}
+/* элементы меню */
+.menu__item {
+	display: block;
+	padding: 12px 24px;
+	color: #444444;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-decoration: none;
+}
+.menu__item:hover {
+	background-color: #efebe4;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	left: 0;
+	z-index: 10;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	transition-duration: 0.25s;
+}
+.menu__box {
+	transition-duration: 0.25s;
+}
+.menu__item {
+	transition-duration: 0.25s;
+}
+
+/* PROMO===================================================================================================================== */
+
+.promo__title span:nth-child(1) {
+	color: #f05624;
+}
+.promo__title span:nth-child(2) {
+	color: #f6b8d1;
+}
+.promo__title span:nth-child(3) {
+	color: #304875;
+}
+.promo__title span:nth-child(4) {
+	color: #53bfa9;
+}
+.promo__title span:nth-child(5) {
+	color: #fdbf4d;
+}
+
+.promo {
+	background-color: #efebe4;
+	padding-top: 96px;
+	padding-bottom: 104px;
+	overflow-x: clip;
+}
+
+.promo__inner {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.promo__inner-left {
+	display: flex;
+	flex-direction: column;
+	max-width: 536px;
+}
+.promo__title {
+	font-family: 'Catamaran';
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 80px;
+	margin-bottom: 32px;
+	color: #444444;
+}
+.promo__subtitle {
+	max-width: 424px;
+	margin-bottom: 48px;
+	line-height: 24px;
+}
+.promo__btn {
+	color: #fff;
+	background-color: #f05624;
+	border-radius: 32px;
+	padding: 8px;
+	text-align: center;
+	width: 198px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 64px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	transition: 0.1s;
+}
+
+.promo__btn:hover {
+	background-color: #fdbf4d;
+}
+.promo__social {
+	display: flex;
+	gap: 16px;
+}
+
+.promo__img {
+	right: -56px;
+	top: -66px;
+}
+
+.promo__lamp {
+	position: absolute;
+	left: 589px;
+	top: -95px;
+}
+.promo__star {
+	position: absolute;
+	right: -4px;
+	top: -19px;
+}
+.promo__globus {
+	position: absolute;
+	bottom: -47px;
+	left: 472px;
+}
+.promo__rocket {
+	position: absolute;
+	bottom: -12px;
+	right: 23px;
+}
+.promo__bloobs {
+	position: absolute;
+	left: -163px;
+	bottom: -300px;
+	z-index: 2;
+}
+
+.promo__nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 99;
+	bottom: 10%;
+	left: 45%;
+	gap: 10px;
+}
+
+.promo__nav-strip {
+	width: 20px;
+	height: 4px;
+	background-color: gray;
+	cursor: pointer;
+}
+
+.active-strip {
+	background-color: #f05624;
+}
+
+/* OFFER===================================================================================================================== */
+
+.offer {
+	background-image: url(../images/Rectangle__offer.png);
+	background-repeat: no-repeat;
+	background-color: #efebe4;
+	background-size: cover;
+	padding-top: 127px;
+	position: relative;
+	padding-bottom: 155px;
+}
+
+.offer__top {
+	display: flex;
+	justify-content: center;
+}
+
+.offer__arrow-img {
+}
+
+.offer__title {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 105px;
+	margin-bottom: 48px;
+	margin-left: 140px;
+}
+
+.offer__inner {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.offer__inner-cards {
+	background-color: #efebe4;
+	max-width: 360px;
+	text-align: center;
+	padding: 52px 20px;
+	border-radius: 32px;
+}
+
+.offer__cards-img {
+	margin-bottom: 32px;
+}
+
+.offer__inner-safety {
+}
+
+.offer__inner-happy {
+}
+
+.offer__inner-creative {
+}
+
+.offer__inner-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 24px;
+	color: #444444;
+}
+
+.offer__subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 155%;
+	color: #444444;
+	opacity: 0.7;
+}
+
+.offer__star-img {
+	position: absolute;
+	bottom: 46px;
+	left: 283px;
+}
+
+/* PERFECT===================================================================================================================== */
+
+.perfect {
+	padding: 150px 0px;
+	background-color: #efebe4;
+	position: relative;
+	overflow-x: clip;
+}
+
+.perfect__bloobs {
+	position: absolute;
+	top: -188px;
+	right: -179px;
+}
+
+.perfect__number {
+	position: absolute;
+	right: 24px;
+	bottom: -83px;
+}
+
+.perfect__inner {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+}
+
+.perfect__inner-left {
+	transform: translateY(-48px);
+}
+
+.perfect__inner-right {
+	max-width: 450px;
+	position: relative;
+}
+
+.perfect__title {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 72px;
+	color: #444444;
+	margin-bottom: 32px;
+}
+
+.perfect__text {
+	font-weight: 400;
+	font-size: 16px;
+	color: #444444;
+	opacity: 0.7;
+	margin-bottom: 48px;
+	line-height: 155%;
+}
+
+.perfect__btn {
+	margin-bottom: 0px;
+	padding: 8px 80px;
+}
+
+/* LESSONS===================================================================================================================== */
+
+.lessons {
+	padding-bottom: 164px;
+	background-color: #efebe4;
+	overflow-y: clip;
+}
+.lessons__title {
+	color: #444444;
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 79px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+.lessons__wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.lessons__wrapper-mob {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.lessons__cards {
+	position: relative;
+	overflow: hidden;
+	width: 384px; /* Задайте ширину и высоту карточки в соответствии с вашим дизайном */
+	height: 384px;
+	border-radius: 24px;
+}
+
+.lessons__cards-mob {
+	position: relative;
+	overflow: hidden;
+	width: 384px; /* Задайте ширину и высоту карточки в соответствии с вашим дизайном */
+	height: 384px;
+	border-radius: 24px;
+	cursor: pointer;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.close {
+	font-weight: 700;
+	font-size: 20px;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	z-index: 500;
+}
+
+.lessons__img {
+	width: 100%;
+	height: auto;
+	transition: opacity 0.3s ease; /* Анимация для плавного исчезания */
+}
+
+.lessons__img-mob {
+	width: 100%;
+	height: auto;
+	transition: opacity 0.3s ease; /* Анимация для плавного исчезания */
+}
+
+.lessons__cards:hover .lessons__img {
+	opacity: 0; /* При наведении на карточку, картинка исчезает */
+}
+
+.lessons__box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto; /* Появляется скролл, если текст больше размеров карточки */
+	box-sizing: border-box;
+	background-color: #f05624; /* Пример цвета фона для текста */
+	color: #fff; /* Пример цвета текста */
+	opacity: 0;
+	transition: opacity 0.3s ease; /* Анимация для плавного появления */
+	padding: 30px;
+	text-align: center;
+}
+
+.lessons_btn {
+	border-radius: 24px;
+	background: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	color: #444;
+	padding: 10px 20px;
+	text-align: center;
+	transition: 500ms ease;
+	position: absolute;
+	bottom: 10%;
+	display: block;
+	left: 33%;
+	transform: scale(100%);
+}
+
+.lessons_btn:hover {
+	transform: scale(105%);
+}
+
+.lessons__box::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Фон полосы прокрутки */
+.lessons__box::-webkit-scrollbar-track {
+	background-color: rgba(220, 220, 220, 0.1);
+	border-radius: 4px;
+}
+
+/* Стиль полосы прокрутки */
+.lessons__box::-webkit-scrollbar-thumb {
+	background-color: rgba(220, 220, 220, 0.2);
+	border-radius: 4px;
+}
+
+/* Цвет полосы прокрутки при наведении */
+.lessons__box::-webkit-scrollbar-thumb:hover {
+	background-color: (220, 220, 220, 0.2);
+}
+
+.lessons__cards:hover .lessons__box {
+	opacity: 1; /* При наведении на карточку, текст появляется */
+}
+
+.lessons__text {
+	margin-bottom: 30px; /* Добавьте отступ снизу по вашему выбору */
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.lessons__discr {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.your-class-tablet {
+	display: none;
+}
+.lessons__inner {
+}
+
+.card-1 {
+	background-color: #f05624;
+}
+.card-2 {
+	background-color: #f6b8d1;
+}
+.card-3 {
+	background: #304875;
+}
+.card-4 {
+	background: #53bfa9;
+}
+.card-5 {
+	background: #fdbf4d;
+}
+.card-6 {
+	background: #444444;
+}
+.card-7 {
+	background-color: #f05624;
+}
+.card-8 {
+	background-color: #f6b8d1;
+}
+.card-9 {
+	background: #304875;
+}
+.card-10 {
+	background: #53bfa9;
+}
+.card-11 {
+	background: #fdbf4d;
+}
+.card-12 {
+	background: #444444;
+}
+.card-13 {
+	background-color: #f05624;
+}
+.card-14 {
+	background-color: #f6b8d1;
+}
+.card-15 {
+	background: #304875;
+}
+
+.card-16 {
+	background: #fdbf4d;
+}
+
+.lessons__box::-webkit-scrollbar {
+	width: 1px; /* Ширина скроллбара */
+}
+
+.my-element::-webkit-scrollbar-track {
+	background-color: #f1f1f1; /* Цвет фона трека скроллбара */
+}
+
+.my-element::-webkit-scrollbar-thumb {
+	background-color: #888; /* Цвет ползунка скроллбара */
+	border-radius: 4px; /* Закругление углов ползунка скроллбара */
+}
+
+.lessons__without-slick {
+	display: none;
+}
+
+/* SLICK SLIDER===================================================================================================================== */
+
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+}
+/* Лента слайдов */
+.slick-track {
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+	position: absolute;
+	font-size: 0;
+	bottom: -75px;
+	right: 50%;
+}
+/* Стрелка влево */
+.your-class .slick-arrow.slick-prev {
+	padding: 26px 30px;
+	border: none;
+	background-color: #b1ded5;
+	border-radius: 90px 0px 0px 90px;
+	cursor: pointer;
+}
+.your-class .slick-arrow.slick-prev::before {
+	content: '';
+	position: absolute;
+	background-image: url('../images/arrow-prev.svg');
+	background-size: 10px 20px;
+	background-repeat: no-repeat;
+	background-position: 43% 50%;
+	border-radius: 90px;
+	padding: 22px;
+	transform: translate(-50%, -50%);
+	left: 26px;
+	transition: 0.3s;
+}
+
+.your-class .slick-arrow.slick-prev:hover::before {
+	background-color: #53bfa9;
+}
+
+/* Стрелка вправо */
+.your-class .slick-arrow.slick-next {
+	padding: 26px 30px;
+	border: none;
+	background-color: #b1ded5;
+	border-radius: 0px 90px 90px 0px;
+	transform: translateX(100%);
+	cursor: pointer;
+}
+
+.your-class .slick-arrow.slick-next::before {
+	content: '';
+	position: absolute;
+	background-image: url('../images/arrow-next.svg');
+	background-size: 10px 20px;
+	background-repeat: no-repeat;
+	background-position: 57% 50%;
+	border-radius: 90px;
+	padding: 22px;
+	transform: translate(-50%, -50%);
+	right: -18px;
+	transition: 0.3s;
+}
+
+.your-class .slick-arrow.slick-next:hover::before {
+	background-color: #53bfa9;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
+/* SCHEDULE===================================================================================================================== */
+
+.schedule {
+	background-image: url(../images/schedule__background.png);
+	background-repeat: no-repeat;
+	background-color: #efebe4;
+	background-size: cover;
+	position: relative;
+	overflow-y: clip;
+	padding-bottom: 207px;
+}
+
+.schedule__inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 134px;
+}
+.schedule__title {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 79px;
+	color: #444444;
+	margin-bottom: 24px;
+	margin-left: 97px;
+}
+.schedule__arrow {
+	position: relative;
+	top: 30px;
+	right: 33px;
+}
+
+.schedule__link {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+	background: #f05624;
+	border-radius: 90px;
+	width: 255px;
+	height: 52px;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	color: #ffffff;
+	transition: 0.1s;
+}
+
+.schedule__link:hover {
+	background-color: #fdbf4d;
+}
+.schedule__robot {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+/* TEACHERS===================================================================================================================== */
+
+.teachers {
+	background-color: #efebe4;
+	padding: 80px 0px 170px 0px;
+	position: relative;
+	overflow-x: clip;
+}
+
+.teachers__hat-img {
+	position: absolute;
+	top: 100px;
+	right: 190px;
+	z-index: 1;
+}
+.teachers__bloobs-pink {
+	position: absolute;
+	right: -124px;
+	top: -50px;
+	z-index: 0;
+}
+
+.teachers__bloobs-green {
+	position: absolute;
+	z-index: 1;
+	bottom: 119px;
+	left: -118px;
+}
+
+.teachers__card img {
+	z-index: 2;
+}
+
+.teachers__title {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 79px;
+	color: #444444;
+	text-align: center;
+	margin-bottom: 88px;
+}
+
+.teachers__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.teachers__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.teachers__card-title {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 39px;
+	color: #444444;
+	margin: 32px 0 8px 0;
+}
+
+.teachers__card-subtitle {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #444444;
+}
+
+/* LOVEUS===================================================================================================================== */
+
+.loveus {
+	background-image: url(../images/loveus__background.png);
+	background-repeat: no-repeat;
+	background-color: #efebe4;
+	background-size: cover;
+	position: relative;
+	padding-top: 87px;
+	padding-bottom: 150px;
+}
+
+.loveus__title {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 62px;
+	text-align: center;
+	color: #444444;
+	margin-bottom: 120px;
+}
+
+.loveus__heart-img {
+	position: absolute;
+	top: 97px;
+	right: 349px;
+}
+
+.loveus__star-img {
+	position: absolute;
+	top: 77px;
+	left: 110px;
+}
+
+.loveus__bloobs-img {
+	position: absolute;
+	bottom: -140px;
+	left: -117px;
+	z-index: 1;
+}
+
+.loveus__card {
+	display: flex;
+	justify-content: space-between;
+}
+.card-inner-pink {
+	background-image: url(../images/loveus-card-pink.png);
+	background-repeat: no-repeat;
+	width: 384px;
+	height: 311px;
+}
+.card-inner-yellow {
+	background-image: url(../images/loveus-card-yellow.png);
+	background-repeat: no-repeat;
+	width: 384px;
+	height: 311px;
+}
+
+.card-inner-green {
+	background-image: url(../images/loveus-card-green.png);
+	background-repeat: no-repeat;
+	width: 384px;
+	height: 311px;
+}
+
+.loveus__card-inner {
+}
+
+.loveus__card-text {
+	padding: 18px 19px 68px 19px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 155%;
+	color: #ffffff;
+}
+
+.loveus__people {
+	display: flex;
+	gap: 166px;
+	padding-top: 55px;
+}
+
+.loveus__people-holder {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.people-holder-two {
+	padding-right: 13px;
+}
+
+.loveus__people-holder img {
+}
+.loveus__people-box {
+}
+.loveus__people-name {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 28px;
+	color: #090914;
+}
+.loveus__people-subtext {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #64748b;
+}
+
+/* CONTACT===================================================================================================================== */
+
+.contact {
+	background-color: #efebe4;
+	position: relative;
+	padding-bottom: 120px;
+	padding-top: 65px;
+}
+
+.contact__inner {
+	display: flex;
+	gap: 130px;
+	padding-left: 62px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__inner-title {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 79px;
+	color: #444444;
+	text-align: center;
+}
+
+.contact__inner-text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #444444;
+	margin-bottom: 8px;
+}
+
+input,
+textarea:focus {
+	outline: none;
+}
+
+.input,
+textarea {
+	margin-top: 24px;
+	margin-bottom: 5px;
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 14px 20px;
+	border: none;
+	color: #444444;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	width: 480px;
+}
+
+.input::placeholder {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #444444;
+	opacity: 0.7;
+	padding-right: 20px;
+}
+
+.textarea {
+	width: 100%;
+	resize: none;
+	height: 128px;
+}
+
+.button {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	padding: 12px 0px;
+	background: #f05624;
+	border-radius: 32px;
+	border: none;
+	cursor: pointer;
+	transition: 0.1s;
+	margin-top: 25px;
+}
+.button:hover {
+	background-color: #fdbf4d;
+}
+
+.contact__inner-right {
+	display: flex;
+	flex-direction: column;
+	max-width: 371px;
+}
+
+.contact__title-right {
+	text-align: left;
+	margin-bottom: 104px;
+}
+
+.contact__inner-right p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #444444;
+}
+
+.contact__inner-right-text {
+	margin-top: 20px;
+}
+
+.contact__inner-right-social {
+	display: flex;
+	gap: 16px;
+	margin-top: 104px;
+}
+
+.contacts__sun-img {
+	position: absolute;
+	top: -77px;
+	left: 30px;
+	z-index: 2;
+}
+.contacts__pensil-img {
+	position: absolute;
+	top: 0;
+	right: 75px;
+}
+.contacts__earth-img {
+	position: absolute;
+	bottom: 0;
+	right: 68px;
+}
+
+/* FOOTER===================================================================================================================== */
+
+.footer {
+	background-color: #efebe4;
+}
+.footer__copyright {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	color: #444444;
+}

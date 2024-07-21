@@ -1,0 +1,880 @@
+@media (max-width: 1500px) {
+	.bloom {
+		right: 0;
+	}
+
+	.yellow_bloom {
+		left: 0;
+	}
+}
+
+@media (max-width: 1219px) {
+	.lessons__title {
+		font-size: 40px;
+	}
+	.your-class {
+		display: none;
+	}
+	.your-class-tablet {
+		display: block;
+	}
+	.loveus__card {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0px 26px;
+	}
+	.loveus__people {
+		display: none;
+	}
+	.loveus__heart-img {
+		right: 229px;
+	}
+
+	.bloom {
+		right: 0;
+		max-width: 250px;
+		z-index: -1;
+	}
+
+	.epoxy_price {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 1042px) {
+	.header {
+		padding-bottom: 10px;
+	}
+	.promo__img {
+		width: 490px;
+		height: 390px;
+	}
+	.promo__title {
+		font-size: 48px;
+		line-height: 48px;
+	}
+	.promo__inner-left {
+		width: 389px;
+	}
+	.promo__social {
+	}
+	.promo__lamp {
+		left: 391px;
+	}
+	.promo__star {
+		right: 98px;
+	}
+	.promo__rocket {
+		bottom: -4px;
+		right: 94px;
+	}
+	.promo__globus {
+		bottom: -11px;
+		left: 436px;
+	}
+
+	.offer__inner {
+		flex-wrap: wrap;
+	}
+
+	.bloom {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.header__list {
+		display: none;
+	}
+
+	.header__schedule-link {
+		line-height: 0;
+	}
+	.header__logo {
+		order: 1;
+		width: 101px;
+		height: 46px;
+	}
+	.hamburger-menu {
+		display: block;
+	}
+	/* .menu-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 45px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        order: -1;
+    
+    }
+    .menu-btn span{
+        width: 100%;
+        height: 2px;
+        background-color: #F05624;
+        
+    }
+    .menu__mobile{
+        display: none;
+    }
+    .menu__mobile.menu--open{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        height: 100vh;
+        z-index: 5;
+        text-align: center;
+        padding-top: 140px;
+
+    } */
+
+	.header__schedule-link {
+		font-size: 0;
+		padding: 10px;
+		gap: 0px;
+	}
+
+	.offer__title {
+		font-size: 40px;
+		margin-left: 0;
+		margin-bottom: 24px;
+	}
+	.offer__inner-cards {
+		height: 313px;
+		padding: 36px 38px;
+	}
+	.offer__cards-img {
+		width: 64px;
+		height: 64px;
+		margin-bottom: 0;
+	}
+	.offer__arrow-img {
+		display: none;
+	}
+	.offer__inner-title {
+		margin-bottom: 16px;
+	}
+	.perfect {
+		padding: 45px 0;
+	}
+	.perfect__bloobs {
+		top: -294px;
+		width: 328px;
+		height: 304px;
+	}
+	.perfect__inner-left {
+		width: 367px;
+		height: 300px;
+		transform: none;
+	}
+	.perfect__title {
+		font-size: 40px;
+		line-height: 40px;
+		margin-bottom: 24px;
+	}
+	.perfect__text {
+		margin-bottom: 32px;
+	}
+	.perfect__number {
+		width: 65px;
+		height: 65px;
+		bottom: -34px;
+	}
+	.promo__globus {
+		bottom: -82px;
+		left: 368px;
+	}
+	.contact__title-right {
+		font-size: 40px;
+		margin-bottom: 32px;
+	}
+	.contact__inner-right-social {
+		margin-top: 32px;
+	}
+	.contact__inner {
+		padding-left: 0;
+	}
+	.contact__inner-right {
+		align-items: center;
+	}
+	.contacts__pensil-img {
+		width: 45px;
+		height: 45px;
+	}
+	.contacts__sun-img {
+		width: 100px;
+		height: 100px;
+	}
+	.contacts__earth-img {
+		width: 100px;
+		height: 90px;
+	}
+	.contact__inner-right p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.contact__inner-title {
+		font-size: 40px;
+	}
+
+	.decoupage_about-info {
+		gap: 50px;
+		justify-content: space-between;
+	}
+
+	.features {
+		margin-top: 50px;
+		max-width: 100%;
+	}
+
+	.contact__inner {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+	}
+
+	.contact {
+		padding-bottom: 80px;
+	}
+
+	.gallery {
+		padding-bottom: 0;
+	}
+
+	.textarea {
+		width: 480px;
+	}
+
+	.contact button {
+		width: 480px;
+	}
+
+	.form {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contact__inner-right {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cooking_about-info {
+		gap: 0;
+	}
+}
+
+@media (max-width: 939px) {
+	.promo__img {
+		width: 420px;
+		height: 330px;
+	}
+	.promo__lamp {
+		left: 367px;
+	}
+
+	.promo__star {
+		top: -62px;
+	}
+}
+
+@media (max-width: 768px) {
+	.promo__inner-left {
+		width: 340px;
+	}
+
+	.promo__lamp {
+		width: 142px;
+		height: 102px;
+		left: 327px;
+		top: -65px;
+	}
+	.promo {
+		padding-top: 60px;
+	}
+	.promo__star {
+		right: 66px;
+		width: 26px;
+		height: 26px;
+		top: -27px;
+	}
+	.promo__globus {
+		bottom: -12px;
+		left: 348px;
+		width: 65px;
+		height: 83px;
+	}
+	.promo__rocket {
+		width: 59px;
+		height: 47px;
+		bottom: 67px;
+		right: 18px;
+	}
+	.lessons__without-slick {
+		display: block;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.your-class-tablet {
+		display: none;
+	}
+	.lessons__cards {
+		width: 343px;
+	}
+	.lessons__title {
+		font-size: 45px;
+		line-height: 40px;
+	}
+	.lessons {
+		padding-bottom: 57px;
+	}
+	.loveus__heart-img {
+		right: 152px;
+	}
+	.loveus__title {
+		margin-bottom: 24px;
+		font-size: 40px;
+	}
+	.loveus__star-img {
+		top: -18px;
+		left: 8px;
+	}
+	.loveus__card {
+		width: 100%;
+	}
+	.contact__inner {
+		gap: 82px;
+	}
+
+	.decoupage_about-info {
+		flex-direction: column;
+	}
+
+	.swiper-slide {
+		width: calc(100% / 2);
+		flex-shrink: 0;
+	}
+
+	.features p {
+		font-size: 18px;
+	}
+
+	.features h5 {
+		font-size: 22px;
+	}
+
+	.cooking_about-info {
+		gap: 50px;
+	}
+
+	.decoupage_main {
+		background: url('/images/pages/decoupage-mob.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 200px;
+	}
+
+	.cooking_main {
+		background: url('/images/pages/cooking-mob.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.epoxy_main {
+		background: url('/images/pages/epoxy-mob.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.chess_main {
+		background: url('/images/pages/chess-mob.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.painting_main {
+		background: url('/images/pages/painting-mob.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.slime_main {
+		background: url('/images/pages/slime-mob.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.decoupage_main-title {
+		font-size: 58px;
+		text-align: center;
+	}
+
+	.slime_main-title {
+		font-size: 46px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 518px) {
+	.promo__img {
+		order: -1;
+	}
+	.promo__inner {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.promo__inner-main {
+		max-width: 100%;
+		text-align: center;
+	}
+	.promo__inner-left {
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.promo__title {
+		margin-bottom: 16px;
+	}
+	.promo__btn {
+		align-self: center;
+	}
+	.promo__subtitle {
+		margin-bottom: 32px;
+		min-width: 100%;
+	}
+	.promo__social {
+		display: none;
+	}
+	.promo {
+		padding-bottom: 58px;
+	}
+	.promo__lamp {
+		left: -12px;
+	}
+	.promo__globus {
+		left: 19px;
+	}
+	.contact {
+		padding: 0 0 50px 0;
+	}
+	.loveus {
+		padding-bottom: 70px;
+	}
+	.contact__inner {
+		flex-direction: column;
+		gap: 56px;
+	}
+	.form {
+		padding: 0;
+	}
+
+	.decoupage_about-info--right {
+		width: 100%;
+	}
+
+	.book {
+		width: 100%;
+	}
+
+	.input,
+	.textarea {
+		width: 350px;
+	}
+
+	.contact button {
+		width: 350px;
+	}
+
+	.features,
+	.yellow_bloom {
+		display: none;
+	}
+
+	.about_mob {
+		display: block;
+	}
+
+	.about_mob-title {
+		width: 91px;
+		height: 33px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 6px 24px 6px 24px;
+		box-sizing: border-box;
+		border: 2px solid rgb(68, 68, 68);
+		border-radius: 24px;
+		margin-bottom: 25px;
+	}
+
+	.about_mob p {
+		color: rgb(68, 68, 68);
+		font-family: Poppins;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 40px;
+	}
+
+	.container {
+		padding: 0 15px;
+	}
+
+	.menu__btn {
+		left: 25px;
+	}
+
+	.decoupage_about {
+		padding: 20px 0 100px;
+	}
+
+	.testimonials {
+		display: block;
+		padding: 100px 0 50px;
+	}
+
+	.testimonials_title {
+		color: rgb(68, 68, 68);
+		font-family: Poppins;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 21px;
+		letter-spacing: 0%;
+		text-align: left;
+		box-sizing: border-box;
+		border: 2px solid rgb(68, 68, 68);
+		border-radius: 24px;
+		padding: 6px 24px 6px 24px;
+		width: 138px;
+		margin: 0 auto 16px;
+	}
+
+	.testimonials_slider-item {
+		border-radius: 20px;
+		background: rgb(249, 247, 245);
+		padding: 86px 24px 22px;
+		position: relative;
+		display: none;
+	}
+
+	.active_testimonial {
+		display: block;
+	}
+
+	.testimonials_slider-item p {
+		color: rgb(68, 68, 68);
+		font-family: Poppins;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 155%;
+		letter-spacing: 0px;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+
+	.testimonials_slider-item h4 {
+		color: rgb(9, 9, 20);
+		font-family: Poppins;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 28px;
+		letter-spacing: -0.2px;
+		text-align: center;
+	}
+
+	.testimonials_slider-item span {
+		position: absolute;
+		top: 0;
+		left: 5%;
+		color: rgb(68, 68, 68);
+		font-family: Oleo Script;
+		font-size: 96px;
+		font-weight: 400;
+		line-height: 133px;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+
+	.testimonials_slider-nav {
+		margin-top: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 18px;
+	}
+
+	.lessons_btn {
+		position: static;
+		transform: none;
+		margin-top: 20px;
+	}
+
+	.swiper-slide {
+		width: 100%;
+	}
+
+	.slime_main-title {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 480px) {
+	.offer {
+		padding-top: 68px;
+	}
+	.promo__lamp {
+		left: -13px;
+		top: -46px;
+	}
+	.promo__img {
+		width: 375px;
+		height: 295px;
+	}
+	.promo__star {
+		right: 25px;
+		top: 7px;
+	}
+	.promo__inner-main {
+	}
+	.promo__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.promo__inner-left {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.promo__globus {
+		bottom: -42px;
+		left: 4px;
+	}
+	.promo__rocket {
+		bottom: 91px;
+	}
+	.promo__bloobs {
+		display: none;
+	}
+	.offer__title {
+		margin-bottom: 0;
+	}
+	.perfect__inner {
+		flex-wrap: wrap;
+		max-width: 343px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.perfect {
+		padding-top: 0;
+	}
+	.perfect__number {
+		right: -39px;
+	}
+	.perfect__bloobs {
+		display: none;
+	}
+	.lessons__title {
+		font-size: 40px;
+	}
+	.loveus__heart-img {
+		right: 14px;
+		width: 50px;
+		height: 50px;
+	}
+	.loveus__star-img {
+		top: 28px;
+		width: 130px;
+		height: 130px;
+	}
+	.loveus__bloobs-img {
+		display: none;
+	}
+	.loveus {
+		padding-bottom: 48px;
+	}
+	.contacts__sun-img {
+		width: 70px;
+		height: 70px;
+		top: -38px;
+	}
+	.contacts__pensil-img {
+		top: -31px;
+		right: 41px;
+	}
+	.contacts__earth-img {
+		width: 80px;
+		height: 84px;
+		right: 8px;
+	}
+	.schedule {
+		padding-bottom: 50px;
+	}
+	.schedule__inner {
+		padding-top: 50px;
+	}
+	.schedule__arrow {
+		display: none;
+	}
+	.schedule__robot {
+		width: 100px;
+		height: 100px;
+		left: 0;
+		top: 93px;
+	}
+	.schedule__title {
+		margin: 0;
+		text-align: center;
+		font-size: 40px;
+		line-height: 40px;
+		padding-bottom: 32px;
+	}
+
+	.lessons__wrapper {
+		display: none;
+	}
+
+	.lessons__wrapper-mob {
+		display: flex;
+	}
+
+	.cooking_main-title {
+		font-size: 46px;
+	}
+
+	.slime_main-title {
+		font-size: 38px;
+		line-height: normal;
+		text-align: center;
+	}
+
+	.promo__nav {
+		bottom: 4%;
+		left: 40%;
+	}
+}
+@media (max-width: 433px) {
+	.lessons__cards-mob {
+		width: 100%;
+		height: auto;
+	}
+
+	.header__address {
+		display: none;
+	}
+
+	.testimonials {
+		padding: 50px 0 25px;
+	}
+	.info-flex {
+		align-items: start;
+	}
+
+	.info_title {
+		font-size: 18px;
+	}
+
+	.price {
+		font-size: 20px;
+	}
+}
+@media (max-width: 375px) {
+	.promo__img {
+		width: 375px;
+		height: 295px;
+		right: 1px;
+	}
+	.promo__star {
+		right: 25px;
+	}
+	.promo__inner-main {
+		padding-left: 0;
+	}
+	.promo__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.promo__inner-left {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.promo__globus {
+		bottom: -42px;
+	}
+	.promo__rocket {
+		bottom: 91px;
+	}
+	.offer__star-img {
+		width: 40px;
+		height: 40px;
+	}
+	.perfect__number {
+		right: -12px;
+	}
+	.perfect__bloobs {
+		display: none;
+	}
+	.perfect__title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.lessons__title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.loveus__heart-img {
+		width: 40px;
+		height: 40px;
+	}
+	.loveus__star-img {
+		width: 100px;
+		height: 100px;
+		top: 10px;
+	}
+	.card-inner-pink {
+		background-image: url(../images/loveus-card-pink2.png);
+		max-width: 343px;
+		max-height: 284.5px;
+	}
+	.card-inner-green {
+		background-image: url(../images/loveus-card-green2.png);
+		max-width: 343px;
+		max-height: 284.5px;
+	}
+	.card-inner-yellow {
+		background-image: url(../images/loveus-card-yellow2.png);
+		max-width: 343px;
+		max-height: 284.5px;
+	}
+	.loveus__card {
+		gap: 20px;
+	}
+	.loveus__card-text {
+		padding: 18px 12px 68px 19px;
+	}
+
+	.input,
+	.textarea,
+	.contact button {
+		width: 300px;
+	}
+}

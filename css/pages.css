@@ -1,0 +1,223 @@
+.header__address {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.decoupage_main {
+	background: url('/images/pages/decoupage-main.png');
+	padding-top: 350px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 5;
+	background-position: center;
+}
+
+.decoupage_main::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.cooking_main {
+	background: url('/images/pages/cooking-main.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.epoxy_main {
+	background: url('/images/pages/epoxy_main.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.chess_main {
+	background: url('/images/pages/chess_main.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.painting_main {
+	background: url('/images/pages/painting_main.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.slime_main {
+	background: url('/images/pages/slime_main.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.decoupage_main-title {
+	color: rgb(255, 255, 255);
+	font-family: Catamaran;
+	font-size: 76px;
+	font-weight: 700;
+	line-height: 107px;
+	text-align: left;
+	position: relative;
+	z-index: 3;
+}
+
+.bloom {
+	position: absolute;
+	right: 100px;
+	z-index: 1;
+	top: -100px;
+}
+
+.info-flex--cooking {
+	gap: 145px;
+}
+
+.gap {
+	display: block;
+	margin: 5px 0;
+}
+
+.decoupage_about {
+	position: relative;
+	padding: 50px 0 150px;
+}
+
+.decoupage_about-info {
+	display: flex;
+	align-items: start;
+	gap: 200px;
+	position: relative;
+	z-index: 4;
+}
+
+.epoxy_about-info {
+	gap: 100px;
+	position: relative;
+	z-index: 4;
+}
+
+.decoupage_about-info--left,
+.decoupage_about-info--right {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.info-flex {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.epoxy_about-info--left {
+	max-width: 520px;
+}
+
+.info_title {
+	color: rgb(68, 68, 68);
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.info_title-span {
+	font-weight: 700;
+}
+
+.price {
+	color: rgb(68, 68, 68);
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.book {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	margin-bottom: 0;
+}
+
+.features {
+	display: flex;
+	flex-direction: column;
+	max-width: 780px;
+	gap: 50px;
+	margin-top: 100px;
+}
+
+.features h5 {
+	color: rgb(68, 68, 68);
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	letter-spacing: 0%;
+	margin-bottom: 10px;
+}
+
+.features p {
+	color: rgb(68, 68, 68);
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.yellow_bloom {
+	position: absolute;
+	left: 220px;
+}
+
+.gallery {
+	position: relative;
+	z-index: 5;
+	padding-bottom: 100px;
+}
+
+.swiper-slide {
+	width: calc(100% / 3);
+	height: auto;
+}
+
+.gallery_slider-nav {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+}
+
+.gallery_slider-nav img {
+	cursor: pointer;
+	transition: 300ms ease;
+}
+
+.gallery_slider-nav img:hover {
+	transform: scale(1.1);
+}
+
+.about_mob {
+	display: none;
+}
+
+.testimonials {
+	display: none;
+}
